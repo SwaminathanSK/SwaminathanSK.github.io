@@ -95,8 +95,8 @@
                 <a href="https://openreview.net/forum?id=WksFWDQXY6">OpenReview</a>
                 <p></p>
                 <p>
-                  Contrastive Reinforcement Learning (CRL) learns representations that estimate goal reachability, yet its policy remains conditioned on raw goals and therefore does not directly exploit the geometry encoded by its critic. We introduce Direction-Conditioned Policies (DCP), a method built around a small modification to CRL: DCP selects previously visited states as waypoints during online training and conditions the policy on their direction and distance in representation space. At deployment, DCP applies the same interface directly to the final goal, requiring neither waypoint selection nor planning. Across nine navigation and manipulation tasks, DCP attains higher final success rates than CRL on seven tasks and spends more time near the goal on seven. Controlled maze experiments further show that DCP captures shortest-path geometry more accurately and that the supplied direction causally influences the actor's behavior. We identify waypoint coverage and ranking as limits to exploration, and show that learned candidate generation improves goal reaching in two controlled mazes.
-                </p>
+  Contrastive RL learns rich reachability geometry, yet standard actors ignore it by conditioning on raw coordinates. DCP bridges this gap by conditioning the policy on representation-space vectors toward online replay waypoints—transferring seamlessly to zero-shot goal reaching at test time and causally steering trajectory execution.
+</p>
               </td>
             </tr>
 
