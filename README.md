@@ -21,7 +21,7 @@ Write the post here in Markdown.
 - The post's URL becomes `/blog/YYYY/short-title/`.
 - Put images for posts in `assets/posts/`.
 - To keep a post unpublished, add `published: false` to its front matter.
-- Posts are listed only on the Blog page (not on the home page); there is an RSS feed at `/blog/feed.xml`.
+- Posts are listed only on the Blog page (not on the home page).
 
 ## Adding a paper or project
 
