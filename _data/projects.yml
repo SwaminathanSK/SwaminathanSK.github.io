@@ -47,4 +47,5 @@
   description: >-
     An autonomous racing pipeline implementation, deployed in the F1Tenth / RoboRacer
     SimLeague: 1st in prelims and 9th in finals worldwide at ICRA 2025; 8th in prelims
-    worldwide at CDC 2024.
+    worldwide at CDC 2024. I led the path planning team and helped implement a modified
+    minimum curvature path planning algorithm.
