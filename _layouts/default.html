@@ -9,7 +9,7 @@
     {% feed_meta %}
     <link rel="icon" href="{{ '/assets/favicon/favicon.ico' | relative_url }}" type="image/x-icon">
     <link rel="apple-touch-icon" href="{{ '/assets/favicon/apple-touch-icon.png' | relative_url }}">
-    <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}?v={{ site.time | date: '%s' }}">
     {% if page.math %}
     <script>
       window.MathJax = { tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] } };
