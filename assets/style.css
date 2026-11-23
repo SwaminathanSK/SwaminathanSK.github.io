@@ -232,3 +232,13 @@ footer {
   color: #555;
 }
 .blog-note p { margin: 4px 0; }
+
+/* project thumbnails: same frame for every project */
+.entry-thumb-fixed img {
+  width: 160px;
+  height: 150px;
+  object-fit: cover;
+}
+@media (max-width: 640px) {
+  .entry-thumb-fixed img { width: 100%; max-width: 320px; height: auto; aspect-ratio: 160 / 150; }
+}
