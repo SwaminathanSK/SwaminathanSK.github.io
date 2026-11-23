@@ -1,7 +1,7 @@
 {% assign e = include.entry %}
 <div class="entry">
   <div class="entry-thumb{% if include.fixed_thumb %} entry-thumb-fixed{% endif %}">
-    {% if e.image %}<img src="{{ e.image | relative_url }}" alt="">{% endif %}
+    {% if e.image %}<img src="{{ e.image | relative_url }}?v={{ site.time | date: '%s' }}" alt="">{% endif %}
   </div>
   <div class="entry-text">
     <a href="{{ e.url }}"><span class="papertitle">{{ e.title }}</span></a>
