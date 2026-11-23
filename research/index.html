@@ -11,6 +11,13 @@ description: Publications and projects by Sathya (S K Swaminathan).
 </section>
 
 <section>
+  <h2>On-going Projects</h2>
+  {% for p in site.data.ongoing %}
+    {% include entry.html entry=p %}
+  {% endfor %}
+</section>
+
+<section>
   <h2>Projects</h2>
   {% for p in site.data.projects %}
     {% include entry.html entry=p %}

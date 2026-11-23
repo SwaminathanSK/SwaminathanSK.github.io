@@ -1,0 +1,16 @@
+# Ongoing projects, shown on /research/ between Publications and Projects.
+# Same fields as projects.yml.
+
+- title: "Strike vs Guard"
+  url: https://strike-vs-guard.github.io/partners/nus/
+  image: /data/strike-vs-guard.jpg
+  venue: "<em>Aerial Robot Teams, MARMoT Lab, NUS</em>"
+  links:
+    - { name: project page, url: "https://strike-vs-guard.github.io/" }
+    - { name: NUS team, url: "https://strike-vs-guard.github.io/partners/nus/" }
+  description: >-
+    At the NUS side, we are working on learning-based defense strategies for drone teams. For
+    this, I made a genetic-algorithm-based method to develop a defense strategy that deploys
+    atomic planar skills over an episode. I deployed this in real life on crazy-flies inside a
+    drone-cage. We are working on expanding this further into a multi-agent coordination
+    foundation model with test-time prompting and in-context learning capabilities.
