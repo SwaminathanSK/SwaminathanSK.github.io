@@ -29,9 +29,11 @@
     - { name: vertical actuator demo, url: "/assets/projects/rustee/rustee-vertical-actuator.mp4" }
   description: >-
     A mobile ground robot with a vertical actuator for scanning racks, built for Inter IIT Tech
-    Meet 14.0 (2025) as a cross-team collaboration at IIT Kharagpur. As one of the two team leads,
-    I oversaw the software and hardware pipelines with my co-captain, and helped devise a novel
-    flood-fill-inspired structured path planning algorithm for warehouse scanning.
+    Meet 14.0 (2025) as a cross-team collaboration at IIT Kharagpur with contributors from AGV.AI
+    and across campus. As one of the two team leads, I oversaw the software (framework design) and
+    hardware (design decisions and field tests of every component) pipelines with my co-captain,
+    and helped devise a novel flood-fill-inspired structured path planning algorithm for warehouse
+    scanning.
 
 - title: "F1Tenth Autonomous Racing"
   url: https://drive.google.com/drive/folders/1t4BZe5ZZgafvgiYK6u--eVAHSioj3u_3?usp=drive_link
