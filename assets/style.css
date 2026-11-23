@@ -127,9 +127,7 @@ h3.year {
 .intro-photo { flex: 0 0 150px; }
 .intro-photo img {
   width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
+  height: auto;
   display: block;
 }
 .intro-head { flex: 1; }
