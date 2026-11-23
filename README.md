@@ -36,7 +36,7 @@ Edit `_data/publications.yml` or `_data/projects.yml` and copy an existing entry
 | `blog/index.html` | List of all posts |
 | `_layouts/`, `_includes/` | Shared page shell, top navigation, post layout |
 | `assets/style.css` | Styles |
-| `data/` | CV, photos, paper thumbnails |
+| `data/` | Photos and paper thumbnails |
 
 ## Previewing locally (optional)
 
