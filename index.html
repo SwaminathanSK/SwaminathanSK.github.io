@@ -40,7 +40,7 @@ layout: default
   </p>
   <ul class="compact-list">
     {% for p in site.data.publications %}
-    <li><a href="{{ p.url }}">{{ p.title }}</a><br><span class="muted">{{ p.venue }}</span></li>
+    <li><a href="{{ p.url }}">{{ p.title }}</a><br>{% for a in p.authors %}{% if a == site.author %}<strong>{{ a }}</strong>{% else %}{{ a }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}<br><span class="muted">{{ p.venue }}</span></li>
     {% endfor %}
   </ul>
   <p><a href="{{ '/research/' | relative_url }}">All publications and projects &rarr;</a></p>
