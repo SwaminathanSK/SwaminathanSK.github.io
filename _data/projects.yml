@@ -30,7 +30,11 @@
   description: >-
     A mobile ground robot with a vertical actuator designed to scan racks. Built for Inter IIT
     Tech Meet 14.0 (2025) as a cross-team collaboration at IIT Kharagpur, with contributors
-    from AGV.AI and across campus.
+    from AGV.AI and across campus. I was one of the two team leads, so I managed both the
+    software (high level ideation of the framework) and hardware (high level decisions and
+    being involved in field tests for each component of the system) pipelines along with my
+    co-captain. I also helped with ideation of a novel flood-fill inspired warehouse path
+    planning algorithm for scanning.
 
 - title: "F1Tenth Autonomous Racing"
   url: https://drive.google.com/drive/folders/1t4BZe5ZZgafvgiYK6u--eVAHSioj3u_3?usp=drive_link
