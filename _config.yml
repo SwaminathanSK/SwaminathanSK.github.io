@@ -5,6 +5,7 @@ description: >-
   learning, plus a personal blog.
 url: https://swaminathansk.github.io
 baseurl: ""
+timezone: Asia/Singapore
 
 markdown: kramdown
 kramdown:

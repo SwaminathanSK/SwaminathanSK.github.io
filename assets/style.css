@@ -139,8 +139,8 @@ h3.year {
 }
 .name-formal { font-weight: normal; color: #666; }
 .tagline { margin: 6px 0 10px; color: #555; }
-.contact { margin: 0; }
-.contact a { margin-right: 14px; white-space: nowrap; }
+.contact { margin: 12px 0 0; }
+.contact a { white-space: nowrap; }
 .bio { padding-top: 8px; }
 
 .compact-list { padding-left: 20px; }
@@ -214,7 +214,6 @@ footer {
 @media (max-width: 640px) {
   .intro { flex-direction: column; text-align: center; gap: 16px; }
   .intro-photo { flex: none; }
-  .contact a { margin: 0 7px; }
   .entry { flex-direction: column; align-items: flex-start; }
   .entry-thumb img { width: 100%; max-width: 320px; }
   .post-desc { margin-left: 0; }
