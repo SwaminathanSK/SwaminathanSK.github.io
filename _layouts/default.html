@@ -16,6 +16,9 @@
     </script>
     <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
     {% endif %}
+    {% if site.goatcounter != "" and jekyll.environment == "production" %}
+    <script data-goatcounter="https://{{ site.goatcounter }}.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+    {% endif %}
   </head>
   <body>
     <div class="page">

@@ -7,6 +7,9 @@ url: https://swaminathansk.github.io
 baseurl: ""
 timezone: Asia/Singapore
 
+# GoatCounter visitor stats (https://www.goatcounter.com). Set to your site code, e.g. "sathya".
+goatcounter: "sathyamanjula"
+
 markdown: kramdown
 kramdown:
   input: GFM
