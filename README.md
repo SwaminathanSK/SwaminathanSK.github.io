@@ -21,7 +21,7 @@ Write the post here in Markdown.
 - The post's URL becomes `/blog/YYYY/short-title/`.
 - Put images for posts in `assets/posts/`.
 - To keep a post unpublished, add `published: false` to its front matter.
-- The three newest posts appear on the home page automatically; there is an RSS feed at `/blog/feed.xml`.
+- Posts are listed only on the Blog page (not on the home page); there is an RSS feed at `/blog/feed.xml`.
 
 ## Adding a paper or project
 
@@ -31,7 +31,7 @@ Edit `_data/publications.yml` or `_data/projects.yml` and copy an existing entry
 
 | Path | What it is |
 | --- | --- |
-| `index.html` | About page (bio, research interests, recent posts) |
+| `index.html` | About page (bio, research interests, papers) |
 | `research/index.html` | Publications and projects, generated from `_data/` |
 | `blog/index.html` | List of all posts |
 | `_layouts/`, `_includes/` | Shared page shell, top navigation, post layout |

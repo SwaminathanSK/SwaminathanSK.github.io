@@ -2,31 +2,33 @@
 layout: default
 ---
 <section class="intro">
-  <div class="intro-text">
-    <p class="name">Sathya (S K Swaminathan)</p>
-    <p>
-      I'm a senior at the Indian Institute of Technology (IIT) Kharagpur, pursuing my Dual degree (BTech + MTech) in Computer Science and Engineering. I am truly grateful and lucky to be doing my bachelor's and master's theses under <a href="https://cse.iitkgp.ac.in/~aritrah/service.html">Prof. Aritra Hazra</a> in the field of reinforcement learning and representation learning. I am an Undergraduate Researcher at the <a href="http://www.agv.iitkgp.ac.in/">Autonomous Ground Vehicle: Autonomy and Intelligence (AGV.AI) Research Group</a> at IIT Kharagpur under the supervision of <a href="https://www.iitkgp.ac.in/department/MI/faculty/mi-dc">Prof. Debashish Chakravarty</a>.
-    </p>
-    <p>
-      I'm currently away from my home institute on a semester-away research project program at NUS for the summer and fall semester of 2026. Here, I am working on self-supervised/un-supervised RL for real-life robotics with some awesome folks at <a href="https://marmotlab.org/">MARMoT lab</a>, under the guidance of <a href="https://www.marmotlab.org/bio.html">Prof. Guillaume Sartoretti</a>.
-    </p>
-    <p>
-      I spent my sophomore year summer (2024) as a visiting research student at <a href="https://www.clvrai.com/">Cognitive Learning for Vision and Robotics Lab (CLVR)</a> at KAIST, under the guidance of <a href="https://clvrai.com/web_lim/">Prof. Joseph J. Lim</a>.
-    </p>
-    <p>
-      My close family named me Sathya, and that's the name I prefer to go by unofficially nowadays.
-    </p>
+  <a class="intro-photo" href="{{ '/data/Swami.png' | relative_url }}"><img alt="Photo of Sathya" src="{{ '/data/Me.png' | relative_url }}"></a>
+  <div class="intro-head">
+    <h1 class="name">Sathya <span class="name-formal">(S K Swaminathan)</span></h1>
+    <p class="tagline">Dual degree (BTech + MTech) in CSE, IIT Kharagpur<br>Visiting researcher, MARMoT Lab, NUS</p>
     <p class="contact">
-      <a href="mailto:swamisathya2004@gmail.com">Email</a> &nbsp;/&nbsp;
-      <a href="mailto:swami2004@kgpian.iitkgp.ac.in">Institute Email</a> &nbsp;/&nbsp;
-      <a href="https://www.linkedin.com/in/swaminathan-s-k-718679258/">LinkedIn</a> &nbsp;/&nbsp;
-      <a href="https://github.com/SwaminathanSK">Github</a> &nbsp;/&nbsp;
+      <a href="mailto:swamisathya2004@gmail.com">Email</a>
+      <a href="mailto:swami2004@kgpian.iitkgp.ac.in">Institute Email</a>
+      <a href="https://www.linkedin.com/in/swaminathan-s-k-718679258/">LinkedIn</a>
+      <a href="https://github.com/SwaminathanSK">GitHub</a>
       <a href="https://scholar.google.com/citations?user=VMp51i0AAAAJ">Scholar</a>
     </p>
   </div>
-  <div class="intro-photo">
-    <a href="{{ '/data/Swami.png' | relative_url }}"><img alt="Photo of Sathya" src="{{ '/data/Me.png' | relative_url }}"></a>
-  </div>
+</section>
+
+<section class="bio">
+  <p>
+    I'm a senior at the Indian Institute of Technology (IIT) Kharagpur, pursuing my Dual degree (BTech + MTech) in Computer Science and Engineering. I am truly grateful and lucky to be doing my bachelor's and master's theses under <a href="https://cse.iitkgp.ac.in/~aritrah/service.html">Prof. Aritra Hazra</a> in the field of reinforcement learning and representation learning. I am an Undergraduate Researcher at the <a href="http://www.agv.iitkgp.ac.in/">Autonomous Ground Vehicle: Autonomy and Intelligence (AGV.AI) Research Group</a> at IIT Kharagpur under the supervision of <a href="https://www.iitkgp.ac.in/department/MI/faculty/mi-dc">Prof. Debashish Chakravarty</a>.
+  </p>
+  <p>
+    I'm currently away from my home institute on a semester-away research project program at NUS for the summer and fall semester of 2026. Here, I am working on self-supervised/un-supervised RL for real-life robotics with some awesome folks at <a href="https://marmotlab.org/">MARMoT lab</a>, under the guidance of <a href="https://www.marmotlab.org/bio.html">Prof. Guillaume Sartoretti</a>.
+  </p>
+  <p>
+    I spent my sophomore year summer (2024) as a visiting research student at <a href="https://www.clvrai.com/">Cognitive Learning for Vision and Robotics Lab (CLVR)</a> at KAIST, under the guidance of <a href="https://clvrai.com/web_lim/">Prof. Joseph J. Lim</a>.
+  </p>
+  <p>
+    My close family named me Sathya, and that's the name I prefer to go by unofficially nowadays.
+  </p>
 </section>
 
 <section>
@@ -44,15 +46,3 @@ layout: default
   </ul>
   <p><a href="{{ '/research/' | relative_url }}">All publications and projects &rarr;</a></p>
 </section>
-
-{% if site.posts.size > 0 %}
-<section>
-  <h2>Recent posts</h2>
-  <ul class="compact-list">
-    {% for post in site.posts limit:3 %}
-    <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a> <span class="muted">&middot; {{ post.date | date: "%-d %b %Y" }}</span></li>
-    {% endfor %}
-  </ul>
-  <p><a href="{{ '/blog/' | relative_url }}">All posts &rarr;</a></p>
-</section>
-{% endif %}
