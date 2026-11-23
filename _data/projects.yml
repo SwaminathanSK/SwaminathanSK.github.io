@@ -3,18 +3,30 @@
 #         links (optional list of {name, url}), description (HTML allowed).
 
 - title: "LMPC: Safe Multi-Robot Navigation"
-  url: https://drive.google.com/drive/folders/1kMHwjN7e0k1_4EG4s40Lq2ubOnjS5muA?usp=sharing
+  url: /assets/projects/lmpc/lmpc-paper.pdf
   image: /data/lmpc.png
   venue: "<em>Mobile Ground Robots, AGV.AI</em>"
   award: "Inter IIT Tech Meet 13.0 &mdash; Solo Gold, IIT Bombay, 2024"
+  links:
+    - { name: paper, url: "/assets/projects/lmpc/lmpc-paper.pdf" }
+    - { name: code, url: "https://anonymous.4open.science/r/LMPC-183D/" }
+    - { name: demos, url: "https://drive.google.com/file/d/1ZaZ38wU8JEv0yB1TTD7JmIYq7TV9XolR/view?usp=sharing" }
   description: >-
     A general safe navigation framework for multi-robot mobile ground systems. Built for and
-    awarded Solo Gold at Inter IIT Tech Meet 13.0 hosted by IIT Bombay (2024).
+    awarded Solo Gold at Inter IIT Tech Meet 13.0 hosted by IIT Bombay (2024). I was one of the
+    core team members and I built the autonomous exploration pipeline, along with helping with
+    the rest of the engineering work.
 
 - title: "Rustee"
-  url: https://drive.google.com/drive/folders/1lXl-5qMu_Pbhmaa6KIHqB2pyl5QDRKP-?usp=sharing
+  url: /assets/projects/rustee/rustee-technical-documentation.pdf
   image: /data/rustee.png
   venue: "<em>Mobile Ground Robots, IIT Kharagpur</em>"
+  links:
+    - { name: technical documentation, url: "/assets/projects/rustee/rustee-technical-documentation.pdf" }
+    - { name: slides, url: "/assets/projects/rustee/rustee-slides.pdf" }
+    - { name: full pipeline demo, url: "/assets/projects/rustee/rustee-full-pipeline-demo.mp4" }
+    - { name: localization demo, url: "/assets/projects/rustee/rustee-horizontal-localization.mp4" }
+    - { name: vertical actuator demo, url: "/assets/projects/rustee/rustee-vertical-actuator.mp4" }
   description: >-
     A mobile ground robot with a vertical actuator designed to scan racks. Built for Inter IIT
     Tech Meet 14.0 (2025) as a cross-team collaboration at IIT Kharagpur, with contributors
