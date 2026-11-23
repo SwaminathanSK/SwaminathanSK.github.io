@@ -1,0 +1,34 @@
+# Projects, shown on /research/ below publications.
+# Fields: title, url, image, venue (HTML allowed), award (optional, shown in red),
+#         links (optional list of {name, url}), description (HTML allowed).
+
+- title: "LMPC: Safe Multi-Robot Navigation"
+  url: https://drive.google.com/drive/folders/1kMHwjN7e0k1_4EG4s40Lq2ubOnjS5muA?usp=sharing
+  image: /data/lmpc.png
+  venue: "<em>Mobile Ground Robots, AGV.AI</em>"
+  award: "Inter IIT Tech Meet 13.0 &mdash; Solo Gold, IIT Bombay, 2024"
+  description: >-
+    A general safe navigation framework for multi-robot mobile ground systems. Built for and
+    awarded Solo Gold at Inter IIT Tech Meet 13.0 hosted by IIT Bombay (2024).
+
+- title: "Rustee"
+  url: https://drive.google.com/drive/folders/1lXl-5qMu_Pbhmaa6KIHqB2pyl5QDRKP-?usp=sharing
+  image: /data/rustee.png
+  venue: "<em>Mobile Ground Robots, IIT Kharagpur</em>"
+  description: >-
+    A mobile ground robot with a vertical actuator designed to scan racks. Built for Inter IIT
+    Tech Meet 14.0 (2025) as a cross-team collaboration at IIT Kharagpur, with contributors
+    from AGV.AI and across campus.
+
+- title: "F1Tenth Autonomous Racing"
+  url: https://drive.google.com/drive/folders/1t4BZe5ZZgafvgiYK6u--eVAHSioj3u_3?usp=drive_link
+  image: /data/f1tenth.png
+  venue: "<em>Mobile Ground Robots, AGV.AI</em>"
+  award: "1st in prelims worldwide, RoboRacer SimLeague @ ICRA 2025"
+  links:
+    - { name: ICRA 2025 results, url: "https://autodrive-ecosystem.github.io/competitions/roboracer-sim-racing-icra-2025/#results" }
+    - { name: CDC 2024 results, url: "https://autodrive-ecosystem.github.io/competitions/roboracer-sim-racing-cdc-2024/" }
+  description: >-
+    An autonomous racing pipeline implementation, deployed in the F1Tenth / RoboRacer
+    SimLeague: 1st in prelims and 9th in finals worldwide at ICRA 2025; 8th in prelims
+    worldwide at CDC 2024.

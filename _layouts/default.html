@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="S K Swaminathan">
+    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+    {% seo title=false %}
+    {% feed_meta %}
+    <link rel="icon" href="{{ '/assets/favicon/favicon.ico' | relative_url }}" type="image/x-icon">
+    <link rel="apple-touch-icon" href="{{ '/assets/favicon/apple-touch-icon.png' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+    {% if page.math %}
+    <script>
+      window.MathJax = { tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] } };
+    </script>
+    <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+    {% endif %}
+  </head>
+  <body>
+    <div class="page">
+      {% include nav.html %}
+      <main>
+        {{ content }}
+      </main>
+      <footer>
+        Design adapted from <a href="https://jonbarron.info/">Jon Barron</a>'s template.
+      </footer>
+    </div>
+  </body>
+</html>

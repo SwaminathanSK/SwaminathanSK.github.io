@@ -1,0 +1,32 @@
+title: Sathya
+author: S K Swaminathan
+description: >-
+  Sathya (S K Swaminathan) — research on reinforcement learning and robot
+  learning, plus a personal blog.
+url: https://swaminathansk.github.io
+baseurl: ""
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  math_engine: mathjax
+highlighter: rouge
+
+permalink: /blog/:year/:title/
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+feed:
+  path: blog/feed.xml
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+
+exclude:
+  - README.md

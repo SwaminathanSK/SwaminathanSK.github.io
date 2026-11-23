@@ -1,244 +1,59 @@
-<!DOCTYPE HTML>
-<html lang="en">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+---
+layout: default
+---
+<section class="intro">
+  <div class="intro-text">
+    <p class="name">Sathya (S K Swaminathan)</p>
+    <p>
+      I'm a senior at the Indian Institute of Technology (IIT) Kharagpur, pursuing my Dual degree (BTech + MTech) in Computer Science and Engineering. I am truly grateful and lucky to be doing my bachelor's and master's theses under <a href="https://cse.iitkgp.ac.in/~aritrah/service.html">Prof. Aritra Hazra</a> in the field of reinforcement learning and representation learning. I am an Undergraduate Researcher at the <a href="http://www.agv.iitkgp.ac.in/">Autonomous Ground Vehicle: Autonomy and Intelligence (AGV.AI) Research Group</a> at IIT Kharagpur under the supervision of <a href="https://www.iitkgp.ac.in/department/MI/faculty/mi-dc">Prof. Debashish Chakravarty</a>.
+    </p>
+    <p>
+      I'm currently away from my home institute on a semester-away research project program at NUS for the summer and fall semester of 2026. Here, I am working on self-supervised/un-supervised RL for real-life robotics with some awesome folks at <a href="https://marmotlab.org/">MARMoT lab</a>, under the guidance of <a href="https://www.marmotlab.org/bio.html">Prof. Guillaume Sartoretti</a>.
+    </p>
+    <p>
+      I spent my sophomore year summer (2024) as a visiting research student at <a href="https://www.clvrai.com/">Cognitive Learning for Vision and Robotics Lab (CLVR)</a> at KAIST, under the guidance of <a href="https://clvrai.com/web_lim/">Prof. Joseph J. Lim</a>.
+    </p>
+    <p>
+      My close family named me Sathya, and that's the name I prefer to go by unofficially nowadays.
+    </p>
+    <p class="contact">
+      <a href="mailto:swamisathya2004@gmail.com">Email</a> &nbsp;/&nbsp;
+      <a href="mailto:swami2004@kgpian.iitkgp.ac.in">Institute Email</a> &nbsp;/&nbsp;
+      <a href="{{ '/data/SwaminathanResume.pdf' | relative_url }}">CV</a> &nbsp;/&nbsp;
+      <a href="https://www.linkedin.com/in/swaminathan-s-k-718679258/">LinkedIn</a> &nbsp;/&nbsp;
+      <a href="https://github.com/SwaminathanSK">Github</a> &nbsp;/&nbsp;
+      <a href="https://scholar.google.com/citations?user=VMp51i0AAAAJ">Scholar</a>
+    </p>
+  </div>
+  <div class="intro-photo">
+    <a href="{{ '/data/Swami.png' | relative_url }}"><img alt="Photo of Sathya" src="{{ '/data/Me.png' | relative_url }}"></a>
+  </div>
+</section>
 
-    <title>Sathya</title>
+<section>
+  <h2>Research</h2>
+  <p>
+    I'm interested in reinforcement learning, multi-agent systems, robot learning and interpretability. Most of my current research work focuses on major problems faced in transfer and deployment of RL and MARL algorithms into real life robotics. I believe that resolving problems like sample-efficiency, scalability and interpretability are core to the functioning and practical application of RL in robotics.
+  </p>
+  <p>
+    My broader research goal is essentially creating robust and safe robots with accompanying RL algorithms that can "reason" by themselves. The idea that autonomous vehicles, robots and other agents can co-exist with humanity is something that gives me a lot of motivation. Though, I believe that robots which can do tasks that humans cannot do will be more helpful in the long run!
+  </p>
+  <ul class="compact-list">
+    {% for p in site.data.publications %}
+    <li><a href="{{ p.url }}">{{ p.title }}</a><br><span class="muted">{{ p.venue }}</span></li>
+    {% endfor %}
+  </ul>
+  <p><a href="{{ '/research/' | relative_url }}">All publications and projects &rarr;</a></p>
+</section>
 
-    <meta name="author" content="S K Swaminathan">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
-    
-  </head>
-
-  <body>
-    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-      <tr style="padding:0px">
-        <td style="padding:0px">
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr style="padding:0px">
-              <td style="padding:2.5%;width:63%;vertical-align:middle">
-                <p class="name" style="text-align: center;">
-                  Sathya (S K Swaminathan)
-                </p>
-                <p>
-                  I'm a senior at the Indian Institute of Technology (IIT) Kharagpur, pursuing my Dual degree (BTech + MTech) in Computer Science and Engineering. I am truly grateful and lucky to be doing my bachelor's and master's theses under <a href="https://cse.iitkgp.ac.in/~aritrah/service.html">Prof. Aritra Hazra</a> in the field of reinforcement learning and representation learning. I am an Undergraduate Researcher at the <a href="http://www.agv.iitkgp.ac.in/">Autonomous Ground Vehicle: Autonomy and Intelligence (AGV.AI) Research Group</a> at IIT Kharagpur under the supervision of <a href="https://www.iitkgp.ac.in/department/MI/faculty/mi-dc">Prof. Debashish Chakravarty</a>.
-                </p>
-                <p>
-                  I'm currently away from my home institute on a semester-away research project program at NUS for the summer and fall semester of 2026. Here, I am working on self-supervised/un-supervised RL for real-life robotics with some awesome folks at <a href="https://marmotlab.org/">MARMoT lab</a>, under the guidance of <a href="https://www.marmotlab.org/bio.html">Prof. Guillaume Sartoretti</a>.
-                </p>
-                <p>
-                  I spent my sophomore year summer (2024) as a visiting research student at <a href="https://www.clvrai.com/">Cognitive Learning for Vision and Robotics Lab (CLVR)</a> at KAIST, under the guidance of <a href="https://clvrai.com/web_lim/">Prof. Joseph J. Lim</a>.
-                </p>
-                <p>
-                  My close family named me Sathya, and that's the name I prefer to go by unofficially nowadays.
-                </p>
-          
-                <p style="text-align:center">
-                  <a href="mailto:swamisathya2004@gmail.com">Email</a> &nbsp;/&nbsp;
-                  <a href="mailto:swami2004@kgpian.iitkgp.ac.in">Institute Email</a> &nbsp;/&nbsp;
-                  <a href="data/SwaminathanResume.pdf">CV</a> &nbsp;/&nbsp;
-                  <a href="https://www.linkedin.com/in/swaminathan-s-k-718679258/">LinkedIn</a> &nbsp;/&nbsp;
-                  <a href="https://github.com/SwaminathanSK">Github</a> &nbsp;/&nbsp;
-                  <a href="https://scholar.google.com/citations?user=VMp51i0AAAAJ">Scholar</a>
-                </p>
-              </td>
-              <td style="padding:2.5%;width:40%;max-width:40%">
-                <a href="data/Swami.png"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="data/Me.png" class="hoverZoomLink"></a>
-              </td>
-            </tr>
-          </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-              <tr>
-              <td style="padding:20px;width:100%;vertical-align:middle">
-                <h2>Research</h2>
-                <p>
-                  I'm interested in reinforcement learning, multi-agent systems, robot learning and interpretability. Most of my current research work focuses on major problems faced in transfer and deployment of RL and MARL algorithms into real life robotics. I believe that resolving problems like sample-efficiency, scalability and interpretability are core to the functioning and practical application of RL in robotics.
-                </p>
-                
-                <p>
-                  My broader research goal is essentially creating robust and safe robots with accompanying RL algorithms that can "reason" by themselves. The idea that autonomous vehicles, robots and other agents can co-exist with humanity is something that gives me a lot of motivation. Though, I believe that robots which can do tasks that humans cannot do will be more helpful in the long run!
-                </p>
-              </td>
-            </tr>
-          </tbody></table>
-
-          <!-- ============================================================ -->
-          <!-- PUBLICATIONS                                                 -->
-          <!-- ============================================================ -->
-          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
-            <tr>
-              <td>
-                <h2>Publications</h2>
-              </td>
-            </tr>
-          </tbody></table>
-          <table width="100%" align="center" border="0" cellpadding="20"><tbody>
-
-            <tr>
-              <td style="padding:20px;width:25%;vertical-align:middle">
-                <img src='data/ljs.jpg' width="160" alt="LJS" style="border-style:none">
-              </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
-                <a href="https://arxiv.org/abs/2611.27338">
-                  <span class="papertitle">Latent Jacobian Steer: Eliciting Contact-Rich Out-of-Distribution Behaviors from Pretrained Humanoid Controllers</span>
-                </a>
-                <br>
-                <strong>S K Swaminathan</strong>,
-                Shivam Sood,
-                Shreyansh Kansal,
-                Chengyang He,
-                Guillaume Adrien Sartoretti
-                <br>
-                <em>arXiv preprint</em>, 2026
-                <br>
-                <a href="https://arxiv.org/abs/2611.27338">arXiv</a> /
-                <a href="https://arxiv.org/pdf/2611.27338">pdf</a> /
-                <a href="https://latent-jacobian-steer.github.io/">project page</a>
-                <p></p>
-                <p>
-                  Joint-action exploration gives precise control but breaks a pretrained controller's whole-body coordination; latent exploration keeps the coordination but is hard to steer. LJS couples the two by pulling task-relevant joint-action perturbations back into the latent command space through a damped inverse of the policy Jacobian. Without any retraining, demonstrations, or teleoperation, it elicits hurdling, shutter lifting, and non-prehensile door opening from a frozen humanoid behavioral foundation model, and steers a dexterous-hand policy through out-of-distribution assembly tasks.
-                </p>
-              </td>
-            </tr>
-
-            <tr>
-              <td style="padding:20px;width:25%;vertical-align:middle">
-                <!-- TODO: replace with a figure from the paper, e.g. data/dcp.png -->
-                <img src='data/dcp.png' width="160" alt="DCP" style="border-style:none">
-              </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
-                <a href="https://arxiv.org/abs/2610.05087">
-                  <span class="papertitle">Direction-Conditioned Policies for Online Goal-Conditioned Reinforcement Learning</span>
-                </a>
-                <br>
-                <strong>S K Swaminathan</strong>,
-                Damiya Gondha,
-                Theyanesh Eswaramoorthy Rajahkrishnan,
-                Aritra Hazra
-                <br>
-                <em>arXiv preprint</em>, 2026 &nbsp;/&nbsp; <em>ICML Workshop (CompLearn)</em>, 2026 &nbsp; <font color="red"><strong>(Poster)</strong></font>
-                <br>
-                <a href="https://arxiv.org/abs/2610.05087">arXiv</a> /
-                <a href="https://arxiv.org/pdf/2610.05087">pdf</a> /
-                <a href="https://openreview.net/forum?id=WksFWDQXY6">OpenReview</a> /
-                <a href="https://github.com/ApRL-IITKGP/direction-conditioned-policy">code</a>
-                <p></p>
-                <p>
-  Contrastive RL learns rich reachability geometry, yet standard actors ignore it by conditioning on raw coordinates. DCP bridges this gap by conditioning the policy on representation-space vectors toward online replay waypoints—transferring seamlessly to zero-shot goal reaching at test time and causally steering trajectory execution.
-</p>
-              </td>
-            </tr>
-
-            <tr>
-              <td style="padding:20px;width:25%;vertical-align:middle">
-                <!-- TODO: replace with a figure from the paper, e.g. data/spaars.png -->
-                <img src='data/spaars.png' width="160" alt="SPAARS" style="border-style:none">
-              </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
-                <a href="https://arxiv.org/abs/2603.09378">
-                  <span class="papertitle">SPAARS: Safer RL Policy Alignment through Abstract Exploration and Refined Exploitation of Action Space</span>
-                </a>
-                <br>
-                <strong>S K Swaminathan</strong>,
-                Aritra Hazra
-                <br>
-                <em>arXiv preprint</em>, 2026
-                <br>
-                <a href="https://arxiv.org/abs/2603.09378">arXiv</a> /
-                <a href="https://arxiv.org/pdf/2603.09378">pdf</a>
-                <p></p>
-                <p>
-                  A curriculum framework for offline-to-online RL that initially constrains exploration to a CVAE latent manifold for sample-efficient, safe behavioral improvement, then transfers to the raw action space — breaking the exploitation ceiling imposed by the decoder's reconstruction loss. An advantage-gated mode selection mechanism grounded in the Option-Critic termination gradient replaces global &alpha; schedules with per-state decisions. Standalone SPAARS exceeds the offline IQL baseline on D4RL locomotion tasks.
-                </p>
-              </td>
-            </tr>
-
-          </tbody></table>
-          <!-- ============================================================ -->
-          <!-- END PUBLICATIONS                                             -->
-          <!-- ============================================================ -->
-
-          <!-- ============================================================ -->
-          <!-- PROJECTS                                                     -->
-          <!-- ============================================================ -->
-          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
-            <tr>
-              <td>
-                <h2>Projects</h2>
-              </td>
-            </tr>
-          </tbody></table>
-          <table width="100%" align="center" border="0" cellpadding="20"><tbody>
-
-            <tr>
-              <td style="padding:20px;width:25%;vertical-align:middle">
-                <!-- TODO: add thumbnail at data/lmpc.png -->
-                <img src='data/lmpc.png' width="160" alt="LMPC" style="border-style:none">
-              </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
-                <a href="https://drive.google.com/drive/folders/1kMHwjN7e0k1_4EG4s40Lq2ubOnjS5muA?usp=sharing">
-                  <span class="papertitle">LMPC: Safe Multi-Robot Navigation</span>
-                </a>
-                <br>
-                <em>Mobile Ground Robots, AGV.AI</em> &nbsp; <font color="red"><strong>(Inter IIT Tech Meet 13.0 &mdash; Solo Gold, IIT Bombay, 2024)</strong></font>
-                <p></p>
-                <p>A general safe navigation framework for multi-robot mobile ground systems. Built for and awarded Solo Gold at Inter IIT Tech Meet 13.0 hosted by IIT Bombay (2024).</p>
-              </td>
-            </tr>
-
-            <tr>
-              <td style="padding:20px;width:25%;vertical-align:middle">
-                <!-- TODO: add thumbnail at data/rustee.png -->
-                <img src='data/rustee.png' width="160" alt="Rustee" style="border-style:none">
-              </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
-                <a href="https://drive.google.com/drive/folders/1lXl-5qMu_Pbhmaa6KIHqB2pyl5QDRKP-?usp=sharing">
-                  <span class="papertitle">Rustee</span>
-                </a>
-                <br>
-                <em>Mobile Ground Robots, IIT Kharagpur</em>
-                <p></p>
-                <p>A mobile ground robot with a vertical actuator designed to scan racks. Built for Inter IIT Tech Meet 14.0 (2025) as a cross-team collaboration at IIT Kharagpur, with contributors from AGV.AI and across campus.</p>
-              </td>
-            </tr>
-
-            <tr>
-              <td style="padding:20px;width:25%;vertical-align:middle">
-                <!-- TODO: add thumbnail at data/f1tenth.png -->
-                <img src='data/f1tenth.png' width="160" alt="F1Tenth" style="border-style:none">
-              </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
-                <a href="https://drive.google.com/drive/folders/1t4BZe5ZZgafvgiYK6u--eVAHSioj3u_3?usp=drive_link">
-                  <span class="papertitle">F1Tenth Autonomous Racing</span>
-                </a>
-                <br>
-                <em>Mobile Ground Robots, AGV.AI</em> &nbsp; <font color="red"><strong>(1st in prelims worldwide, RoboRacer SimLeague @ ICRA 2025)</strong></font>
-                <br>
-                <a href="https://autodrive-ecosystem.github.io/competitions/roboracer-sim-racing-icra-2025/#results">ICRA 2025 results</a>; <a href="https://autodrive-ecosystem.github.io/competitions/roboracer-sim-racing-cdc-2024/">CDC 2024 results</a> 
-                <p></p>
-                <p>An autonomous racing pipeline implementation, deployed in the F1Tenth / RoboRacer SimLeague: 1st in prelims and 9th in finals worldwide at ICRA 2025; 8th in prelims worldwide at CDC 2024.</p>
-              </td>
-            </tr>
-
-          </tbody></table>
-          <!-- ============================================================ -->
-          <!-- END PROJECTS                                                 -->
-          <!-- ============================================================ -->
-
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-              <td style="padding:0px">
-                <br>
-                <p style="text-align:right;font-size:small;">
-                  Website template from <a href="https://jonbarron.info/">Jon Barron</a>
-                </p>
-              </td>
-            </tr>
-          </tbody></table>
-        </td>
-      </tr>
-    </table>
-  </body>
-</html>
+{% if site.posts.size > 0 %}
+<section>
+  <h2>Recent posts</h2>
+  <ul class="compact-list">
+    {% for post in site.posts limit:3 %}
+    <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a> <span class="muted">&middot; {{ post.date | date: "%-d %b %Y" }}</span></li>
+    {% endfor %}
+  </ul>
+  <p><a href="{{ '/blog/' | relative_url }}">All posts &rarr;</a></p>
+</section>
+{% endif %}

@@ -1,0 +1,20 @@
+{% assign e = include.entry %}
+<div class="entry">
+  <div class="entry-thumb">
+    {% if e.image %}<img src="{{ e.image | relative_url }}" alt="">{% endif %}
+  </div>
+  <div class="entry-text">
+    <a href="{{ e.url }}"><span class="papertitle">{{ e.title }}</span></a>
+    {% if e.authors %}
+    <br>
+    {% for a in e.authors %}{% if a == site.author %}<strong>{{ a }}</strong>{% else %}{{ a }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}
+    {% endif %}
+    {% if e.venue %}<br>{{ e.venue }}{% endif %}
+    {% if e.award %}&nbsp;<span class="award">({{ e.award }})</span>{% endif %}
+    {% if e.links %}
+    <br>
+    {% for l in e.links %}<a href="{{ l.url }}">{{ l.name }}</a>{% unless forloop.last %} / {% endunless %}{% endfor %}
+    {% endif %}
+    <p>{{ e.description }}</p>
+  </div>
+</div>

@@ -1,0 +1,28 @@
+---
+layout: default
+title: Blog
+description: Posts by Sathya (S K Swaminathan).
+---
+<section>
+  <h2>Blog</h2>
+  {% if site.posts.size == 0 %}
+    <p class="muted">Nothing here yet.</p>
+  {% else %}
+    {% for post in site.posts %}
+      {% assign year = post.date | date: "%Y" %}
+      {% if year != current_year %}
+        {% unless forloop.first %}</ul>{% endunless %}
+        <h3 class="year">{{ year }}</h3>
+        <ul class="post-list">
+        {% assign current_year = year %}
+      {% endif %}
+      <li>
+        <span class="muted">{{ post.date | date: "%-d %b" }}</span>
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        {% if post.description %}<br><span class="post-desc">{{ post.description }}</span>{% endif %}
+      </li>
+      {% if forloop.last %}</ul>{% endif %}
+    {% endfor %}
+  {% endif %}
+  <p class="muted"><a href="{{ '/blog/feed.xml' | relative_url }}">RSS feed</a></p>
+</section>

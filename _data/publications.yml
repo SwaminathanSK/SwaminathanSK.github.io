@@ -1,0 +1,57 @@
+# Publications, newest first. Shown on /research/.
+# Fields:
+#   title, url (title link), image (thumbnail under /data/), authors (list;
+#   your own name is bolded automatically), venue (HTML allowed),
+#   links (list of {name, url}), description (HTML allowed).
+
+- title: "Latent Jacobian Steer: Eliciting Contact-Rich Out-of-Distribution Behaviors from Pretrained Humanoid Controllers"
+  url: https://arxiv.org/abs/2611.27338
+  image: /data/ljs.jpg
+  authors: [S K Swaminathan, Shivam Sood, Shreyansh Kansal, Chengyang He, Guillaume Adrien Sartoretti]
+  venue: "<em>arXiv preprint</em>, 2026"
+  links:
+    - { name: arXiv, url: "https://arxiv.org/abs/2611.27338" }
+    - { name: pdf, url: "https://arxiv.org/pdf/2611.27338" }
+    - { name: project page, url: "https://latent-jacobian-steer.github.io/" }
+  description: >-
+    Joint-action exploration gives precise control but breaks a pretrained controller's
+    whole-body coordination; latent exploration keeps the coordination but is hard to steer.
+    LJS couples the two by pulling task-relevant joint-action perturbations back into the
+    latent command space through a damped inverse of the policy Jacobian. Without any
+    retraining, demonstrations, or teleoperation, it elicits hurdling, shutter lifting, and
+    non-prehensile door opening from a frozen humanoid behavioral foundation model, and
+    steers a dexterous-hand policy through out-of-distribution assembly tasks.
+
+- title: "Direction-Conditioned Policies for Online Goal-Conditioned Reinforcement Learning"
+  url: https://arxiv.org/abs/2610.05087
+  image: /data/dcp.png
+  authors: [S K Swaminathan, Damiya Gondha, Theyanesh Eswaramoorthy Rajahkrishnan, Aritra Hazra]
+  venue: >-
+    <em>arXiv preprint</em>, 2026 &nbsp;/&nbsp; <em>ICML Workshop (CompLearn)</em>, 2026
+    &nbsp;<span class="award">(Poster)</span>
+  links:
+    - { name: arXiv, url: "https://arxiv.org/abs/2610.05087" }
+    - { name: pdf, url: "https://arxiv.org/pdf/2610.05087" }
+    - { name: OpenReview, url: "https://openreview.net/forum?id=WksFWDQXY6" }
+    - { name: code, url: "https://github.com/ApRL-IITKGP/direction-conditioned-policy" }
+  description: >-
+    Contrastive RL learns rich reachability geometry, yet standard actors ignore it by
+    conditioning on raw coordinates. DCP bridges this gap by conditioning the policy on
+    representation-space vectors toward online replay waypoints—transferring seamlessly to
+    zero-shot goal reaching at test time and causally steering trajectory execution.
+
+- title: "SPAARS: Safer RL Policy Alignment through Abstract Exploration and Refined Exploitation of Action Space"
+  url: https://arxiv.org/abs/2603.09378
+  image: /data/spaars.png
+  authors: [S K Swaminathan, Aritra Hazra]
+  venue: "<em>arXiv preprint</em>, 2026"
+  links:
+    - { name: arXiv, url: "https://arxiv.org/abs/2603.09378" }
+    - { name: pdf, url: "https://arxiv.org/pdf/2603.09378" }
+  description: >-
+    A curriculum framework for offline-to-online RL that initially constrains exploration to
+    a CVAE latent manifold for sample-efficient, safe behavioral improvement, then transfers
+    to the raw action space — breaking the exploitation ceiling imposed by the decoder's
+    reconstruction loss. An advantage-gated mode selection mechanism grounded in the
+    Option-Critic termination gradient replaces global &alpha; schedules with per-state
+    decisions. Standalone SPAARS exceeds the offline IQL baseline on D4RL locomotion tasks.
